@@ -1,9 +1,16 @@
 import React from 'react';
 import style from './SmartHome.module.css';
-import ToggleSystem from './controls/ToggleSystem'
-import ToggleLight from './controls/ToggleLight'
 import { SET_TOGGLE_VALUE } from './var'
 import DetailsPage from './components/DetailsPage'
+import Floor1Page from './components/Floor1Page'
+import Floor2Page from './components/Floor2Page'
+import Floor3Page from './components/Floor3Page'
+import Header from './components/Header'
+import Menu from './components/Menu'
+import Footer from './components/Footer'
+import HomePage from './components/HomePage'
+import { BrowserRouter, Route } from 'react-router-dom';
+
 
 class SmartHome extends React.Component {
   constructor(props) {
@@ -40,8 +47,28 @@ class SmartHome extends React.Component {
   render() {
     return (
       <div className={style.smartHome} >
-        
-        <DetailsPage store={this.store} />
+        <BrowserRouter>
+          <div className={style.h}><Header /></div>
+          <div className={style.c}>
+            <Route path="/" exact>
+              <HomePage store={this.store} />
+            </Route>
+            <Route path="/Floor1">
+              <Floor1Page store={this.store} />
+            </Route>
+            <Route path="/Floor2">
+              <Floor2Page store={this.store} />
+            </Route>
+            <Route path="/Floor3">
+              <Floor3Page store={this.store} />
+            </Route>
+            <Route path="/Details">
+              <DetailsPage store={this.store} />
+            </Route>
+          </div>
+          <div className={style.n}><Menu /></div>
+          <div className={style.f}><Footer /></div>
+        </BrowserRouter>
       </div>
     );
   }

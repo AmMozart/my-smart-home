@@ -1,4 +1,32 @@
 .smartHome {
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas:
+    "h h"
+    "c n"
+    "f n";
+  grid-gap: 5px;
+}
+
+.smartHome>.h {
+  grid-area: h;
+}
+
+.smartHome>.c {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.smartHome>.n {
+  grid-area: n;
+}
+
+.smartHome>.f {
+  grid-area: f;
 }
