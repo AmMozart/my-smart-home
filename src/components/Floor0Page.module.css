@@ -1,0 +1,62 @@
+.floor {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: auto;
+  border-radius: 40px;
+  border: 1px solid #007eff;
+  box-shadow: inset 0px 0px 30px rgb(14, 115, 146);
+}
+.plan {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  min-width: 600px;
+  min-height: 600px;
+}
+
+.plan>img {
+  position: absolute;
+  /* left: 200px; */
+  /* right: auto; */
+  /* top: 10px; */
+  height: 100%;
+  width: 100%;
+  /* margin: auto;  */
+  /* display: block; */
+} 
+.light_01,
+.light_02,
+.light_03,
+.light_04,
+.light_05 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+}
+.light_01 {
+  left: 50px;
+  top: 220px;
+}
+.light_02 {
+  left: 50px;
+  top: 440px;
+}
+.light_03 {
+  left: 230px;
+  top: 440px;
+}
+.light_04 {
+  left: 410px;
+  top: 440px;
+}
+.light_05 {
+  left: 340px;
+  top: 140px;
+}

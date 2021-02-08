@@ -1,16 +1,19 @@
 import React from 'react';
 import style from './SmartHome.module.css';
 import { SET_TOGGLE_VALUE } from './var'
-import DetailsPage from './components/DetailsPage'
+// import DetailsPage from './components/DetailsPage'
+import Floor0Page from './components/Floor0Page'
 import Floor1Page from './components/Floor1Page'
 import Floor2Page from './components/Floor2Page'
 import Floor3Page from './components/Floor3Page'
+import ZoneGarden from './components/ZoneGarden'
+import CamPage from './components/CamPage'
 import Header from './components/Header'
-import Menu from './components/Menu'
+// import Menu from './components/Menu'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
-import { BrowserRouter, Route } from 'react-router-dom';
-
+import { BrowserRouter, Route } from 'react-router-dom'
+import App from './App'
 
 class SmartHome extends React.Component {
   constructor(props) {
@@ -21,13 +24,13 @@ class SmartHome extends React.Component {
   }
 
   componentDidMount() {
-    console.log("DidMount...")
+    // console.log("DidMount...")
   }
   componentDidUpdate() {
-    console.log("DidUpdate...")
+    // console.log("DidUpdate...")
   }
   componentWillUnmount() {
-    console.log("WillUnmount...")
+    // console.log("WillUnmount...")
   }
 
   changeValue(e) {
@@ -62,11 +65,25 @@ class SmartHome extends React.Component {
             <Route path="/Floor3">
               <Floor3Page store={this.store} />
             </Route>
-            <Route path="/Details">
-              <DetailsPage store={this.store} />
+            <Route path="/Floor0">
+              <Floor0Page store={this.store} />
             </Route>
+            <Route path="/Garden">
+              <ZoneGarden store={this.store} />
+            </Route>
+            <Route path='/Cam'>
+              <CamPage />
+            </Route>
+            <Route path='/Weather'>
+              <App />
+            </Route>
+            {/* <div className={style.n}>
+              <Route path='/' exact>
+                <Menu />
+              </Route>
+            </div> */}
           </div>
-          <div className={style.n}><Menu /></div>
+
           <div className={style.f}><Footer /></div>
         </BrowserRouter>
       </div>

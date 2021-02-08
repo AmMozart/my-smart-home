@@ -3,11 +3,11 @@
   height: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 10fr 2fr;
   grid-template-areas:
     "h h"
-    "c n"
-    "f n";
+    "c c"
+    "f f";
   grid-gap: 5px;
 }
 
@@ -17,10 +17,10 @@
 
 .smartHome>.c {
   grid-area: c;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 .smartHome>.n {

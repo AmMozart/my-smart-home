@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Floor3Page.module.css';
 import { SET_TOGGLE_VALUE } from '../var'
+import figma from "../img/figma.svg"
 
 class Floor3Page extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class Floor3Page extends React.Component {
   render() {
     return (
       <div className={style.floor} >
+        <img src={figma} alt="Plan 0 floor" />
       </div>
     );
   }

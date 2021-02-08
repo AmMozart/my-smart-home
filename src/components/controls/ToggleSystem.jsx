@@ -1,7 +1,7 @@
 import React from 'react'
-import on from '../img/LightSwControl_ON.png'
-import off from '../img/LightSwControl_OFF.png'
-import style from './ToggleLight.module.css'
+import on from '../../img/SceneON.png'
+import off from '../../img/SceneOFF.png'
+import style from './ToggleSystem.module.css'
 import Toggle from './Toggle'
 
 export default ({ description, name, value, changeValue }) => (

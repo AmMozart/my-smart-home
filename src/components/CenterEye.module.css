@@ -1,0 +1,76 @@
+.cssload-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 10px solid rgba(241, 241, 241, 0.34);
+  border-left-color: rgba(0, 0, 0, 0);
+  /* border-top-color: rgba(0, 0, 0, 0); */
+  border-right-color: rgba(0, 0, 0, 0);
+  border-radius: 1000px;
+}
+
+.cssload-whirlpool:active,
+.cssload-whirlpool:active::before,
+.cssload-whirlpool:active::after {
+  border-top-color: rgba(30, 177, 25, 0.8);
+  border-bottom-color: rgba(30, 177, 25, 0.8);
+}
+
+.cssload-whirlpool {
+  margin: -210px 0 0 -210px;
+  height: 400px;
+  width: 400px;
+  animation: cssload-rotate 10000ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+  content: "";
+  margin: -185px 0 0 -185px;
+  height: 350px;
+  width: 350px;
+  animation: cssload-rotate 7000ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+  content: "";
+  margin: -160px 0 0 -160px;
+  height: 300px;
+  width: 300px;
+  animation: cssload-rotate 3000ms linear infinite;
+}
+
+.cssload-container canvas {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 500px;
+}
+
+@keyframes cssload-rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
