@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Weather from './components/OneDayWeather/Weather'
-import style from './App.module.css'
-import WeatherStation from './weatherAPI/WeatherStation'
+import Weather from '../components/OneDayWeather/Weather'
+import style from './WeatherPage.module.css'
+import WeatherStation from '../weatherAPI/WeatherStation'
 
 let weatherStation = new WeatherStation()
-function App() {
+function WeatherPage() {
   const [weatherData, setWeatherData] = useState([{}, {}, {}])
   const [loading, setLoading] = useState(true)
 
@@ -26,14 +26,14 @@ function App() {
       <div className={style.weather}>
         <h2>Loading</h2>
       </div>
-    );
+    )
   } else {
     return (
       <div className={style.weather}>
         <Weather weatherData={weatherData} />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default WeatherPage

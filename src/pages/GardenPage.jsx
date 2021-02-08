@@ -1,23 +1,13 @@
 import React from 'react';
-import style from './ZoneGarden.module.css';
+import style from './GardenPage.module.css';
 import { SET_TOGGLE_VALUE } from '../var'
 import figma from "../img/figma.svg"
 
-class ZoneGarden extends React.Component {
+class GardenPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = props.store.getState()
     this.changeValue = this.changeValue.bind(this)
-  }
-
-  componentDidMount() {
-    console.log("DidMount...")
-  }
-  componentDidUpdate() {
-    console.log("DidUpdate...")
-  }
-  componentWillUnmount() {
-    console.log("WillUnmount...")
   }
 
   changeValue(e) {
@@ -43,4 +33,4 @@ class ZoneGarden extends React.Component {
   }
 }
 
-export default ZoneGarden;
+export default GardenPage;

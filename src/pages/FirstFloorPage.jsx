@@ -1,24 +1,14 @@
 import React from 'react'
-import style from './Floor0Page.module.css'
+import style from './FirstFloorPage.module.css'
 import { SET_TOGGLE_VALUE } from '../var'
 import figma from "../img/figma.svg"
-import ToggleLigft from '../components/controls/ToggleLight'
+import ToggleLight from '../components/controls/ToggleLight'
 
-class Floor0Page extends React.Component {
+class FirstFloorPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = props.store.getState()
     this.changeValue = this.changeValue.bind(this)
-  }
-
-  componentDidMount() {
-    console.log("DidMount...")
-  }
-  componentDidUpdate() {
-    console.log("DidUpdate...")
-  }
-  componentWillUnmount() {
-    console.log("WillUnmount...")
   }
 
   changeValue(e) {
@@ -41,7 +31,7 @@ class Floor0Page extends React.Component {
         <div className={style.plan} >
           <img src={figma} alt="Plan 0 floor" />
           <div className={style.light_01} >
-            <ToggleLigft
+            <ToggleLight
               description="0-01L"
               name=""
               value={this.state.statusReducer['0-01L']}
@@ -49,7 +39,7 @@ class Floor0Page extends React.Component {
             />
           </div>
           <div className={style.light_02} >
-            <ToggleLigft
+            <ToggleLight
               description="0-02L"
               name=""
               value={this.state.statusReducer['0-02L']}
@@ -57,7 +47,7 @@ class Floor0Page extends React.Component {
             />
           </div>
           <div className={style.light_03} >
-            <ToggleLigft
+            <ToggleLight
               description="0-03L"
               name=""
               value={this.state.statusReducer['0-03L']}
@@ -65,7 +55,7 @@ class Floor0Page extends React.Component {
             />
           </div>
           <div className={style.light_04} >
-            <ToggleLigft
+            <ToggleLight
               description="0-04L"
               name=""
               value={this.state.statusReducer['0-04L']}
@@ -73,7 +63,7 @@ class Floor0Page extends React.Component {
             />
           </div>
           <div className={style.light_05} >
-            <ToggleLigft
+            <ToggleLight
               description="0-05L"
               name=""
               value={this.state.statusReducer['0-05L']}
@@ -86,4 +76,4 @@ class Floor0Page extends React.Component {
   }
 }
 
-export default Floor0Page;
+export default FirstFloorPage

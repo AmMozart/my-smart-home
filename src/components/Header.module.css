@@ -7,6 +7,8 @@
   grid-template-columns: 1fr 6fr 1fr 4fr;
   grid-template-rows: 1fr;
   color: rgb(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .home,
@@ -49,64 +51,29 @@
 }
 
 
-.cssload-container {
-  /* position: relative; */
-  width: 10%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.cssload-container .cssload-item {
-  margin: auto 2% auto auto;
-  /* position: absolute; */
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 49px;
-  height: 49px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  background-color: rgb(205, 44, 29);
-  background-image: linear-gradient(rgb(201, 111, 8), rgb(228, 128, 13));
-  box-sizing: border-box;
-  animation: cssload-tilt 0.5s ease-in-out infinite alternate;
-}
-
-.cssload-container .cssload-item:after {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  bottom: -19px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  background-color: rgb(205, 70, 29);
-  background-image: linear-gradient(rgb(201, 111, 8), rgb(228, 128, 13));
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
-  content: '';
-  box-sizing: border-box;
-  animation: cssload-ding 0.5s ease-in-out infinite alternate, cssload-tilt 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes cssload-tilt {
-  from {
-    transform: rotate(45deg);
+@media (max-width: 576px) {
+  .header {
+    border-radius: 0;
+    background: #000;
   }
-
-  to {
-    transform: rotate(-45deg);
+  .header div>div {
+    font-size: 2.2em;
+    padding: 1px 10px;
+    margin: 0px;
+    border-radius: 15px;
+    border: 1px solid #2868ab;
+    background-color: rgb(0 0 0 / 47%);
+    box-shadow: inset 0px -2px 5px #2868ab;
   }
 }
 
-@keyframes cssload-ding {
-  from {
-    left: 0%;
-  }
+@media (max-width: 768px) {
 
-  to {
-    left: calc(100% - 49px / 5);
-  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
 }

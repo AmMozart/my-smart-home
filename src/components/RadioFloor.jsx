@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 export default () => (
   <div className={style.radioContainer}>
-    <NavLink to="/Floor0">Котельная</NavLink>
-    <NavLink to="/Floor1">1 Этаж</NavLink>
-    <NavLink to="/Floor2">2 Этаж</NavLink>
-    <NavLink to="/Floor3">Мансарда</NavLink>
-    <NavLink to="/Garden">Улица</NavLink>
+    <NavLink to="/BasementPage">Котельная</NavLink>
+    <NavLink to="/FirstFloorPage">1 Этаж</NavLink>
+    <NavLink to="/SecondFloorPage">2 Этаж</NavLink>
+    <NavLink to="/MansardPage">Мансарда</NavLink>
+    <NavLink to="/GardenPage">Улица</NavLink>
   </div>
 )

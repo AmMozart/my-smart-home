@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './DetailsPage.module.css';
-import ToggleSystem from './controls/ToggleSystem'
-import ToggleLight from './controls/ToggleLight'
+import ToggleSystem from '../components/controls/ToggleSystem'
+import ToggleLight from '../components/controls/ToggleLight'
 import { SET_TOGGLE_VALUE } from '../var'
 
 class DetailsPage extends React.Component {

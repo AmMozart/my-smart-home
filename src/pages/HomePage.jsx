@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './HomePage.module.css';
-import CenterEye from './CenterEye'
+import CenterEye from '../components/CenterEye'
 
 class HomePage extends React.Component {
 
@@ -31,8 +31,6 @@ class HomePage extends React.Component {
           <i className="fa fa-align-justify fa-2x" aria-hidden="true"></i>
           ШТОРЫ
         </div>
-        {/* <div className={style.class7}>7</div>
-        <div className={style.class8}>8</div> */}
         <div className={style.class9}>
           <React.Fragment>
             <CenterEye />

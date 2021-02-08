@@ -1,23 +1,13 @@
 import React from 'react';
-import style from './Floor2Page.module.css';
+import style from './BasementPage.module.css';
 import { SET_TOGGLE_VALUE } from '../var'
 import figma from "../img/figma.svg"
 
-class Floor2Page extends React.Component {
+class BasementPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = props.store.getState()
     this.changeValue = this.changeValue.bind(this)
-  }
-
-  componentDidMount() {
-    console.log("DidMount...")
-  }
-  componentDidUpdate() {
-    console.log("DidUpdate...")
-  }
-  componentWillUnmount() {
-    console.log("WillUnmount...")
   }
 
   changeValue(e) {
@@ -37,10 +27,10 @@ class Floor2Page extends React.Component {
   render() {
     return (
       <div className={style.floor} >
-        <img src={figma} alt="Plan 0 floor" />
+        <img src={figma} alt="Plan of Boiler Room" />
       </div>
     );
   }
 }
 
-export default Floor2Page;
+export default BasementPage;
