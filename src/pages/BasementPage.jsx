@@ -1,36 +1,13 @@
-import React from 'react';
-import style from './BasementPage.module.css';
-import { SET_TOGGLE_VALUE } from '../var'
+import React from 'react'
+import style from './BasementPage.module.css'
 import figma from "../img/figma.svg"
 
-class BasementPage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = props.store.getState()
-    this.changeValue = this.changeValue.bind(this)
-  }
-
-  changeValue(e) {
-    const cpyState = { ...this.state }
-    cpyState.statusReducer[e.target.name] = e.target.checked
-
-    this.setState(cpyState)
-    this.props.store.dispatch({
-      type: SET_TOGGLE_VALUE,
-      data: {
-        name: e.target.name,
-        value: e.target.checked
-      }
-    })
-  }
-
-  render() {
-    return (
+const BasementPage = () => {
+  return (
       <div className={style.floor} >
         <img src={figma} alt="Plan of Boiler Room" />
       </div>
-    );
-  }
+  )
 }
 
 export default BasementPage;

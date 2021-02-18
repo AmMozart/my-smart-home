@@ -44,7 +44,9 @@
     ]
   },
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/react-redux": "^7.1.16"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AmMozart/my-smart-home.git"

@@ -1,0 +1,20 @@
+.disconnect {
+  /* color: #e25656d9; */
+  animation: connection 1.5s infinite ease;
+}
+
+.connect {
+  color: #5ae256c7;
+}
+
+@keyframes connection {
+  from {
+    color: #f00;
+  }
+  50% {
+    color: #000;
+  }
+  to {
+    color: #f00;
+  }
+}

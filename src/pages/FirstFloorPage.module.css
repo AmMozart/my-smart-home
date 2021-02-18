@@ -11,6 +11,7 @@
   border-radius: 40px;
   border: 1px solid #007eff;
   box-shadow: inset 0px 0px 30px rgb(14, 115, 146);
+  overflow: hidden;
 }
 .plan {
   position: relative;
@@ -39,6 +40,7 @@
   width: 100px;
   height: 100px;
   z-index: 100;
+  opacity: 1;
 }
 .light_01 {
   left: 50px;
@@ -59,4 +61,55 @@
 .light_05 {
   left: 340px;
   top: 140px;
+}
+
+@media (max-width: 576px) {
+  .plan {
+    width: 450px;
+    height: 410px;
+    min-width: 450px;
+    min-height: 410px;
+  }
+
+  .light_01,
+  .light_02,
+  .light_03,
+  .light_04,
+  .light_05 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .light_01 {
+    left: 110px;
+    top: 190px;
+  }
+  .light_02 {
+    left: 180px;
+    top: 280px;
+  }
+  .light_03 {
+    left: 250px;
+    top: 220px;
+  }
+  .light_04 {
+    left: 310px;
+    top: 170px;
+  }
+  .light_05 {
+    left: 170px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+
 }

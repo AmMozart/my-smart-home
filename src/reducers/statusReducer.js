@@ -1,5 +1,5 @@
 import { SET_TOGGLE_VALUE } from '../var'
-import Esp32 from '../esp32API/Esp32'
+import smartController from '../smartController/smartController'
 
 const initialState = {
   '0-01L': true,
@@ -8,14 +8,12 @@ const initialState = {
   '0-04L': true,
   '0-05L': true,
 }
-const smartController = new Esp32()
-smartController.connect()
 
 let statusReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_TOGGLE_VALUE: {
       try {
-        if (smartController) smartController.socket.send(smartController.getPackage({
+        if (smartController.isConnect) smartController.socket.send(smartController.getPackage({
           channel: +(action.data.name[3]),
           level: action.data.value ? 255 : 0
         }))

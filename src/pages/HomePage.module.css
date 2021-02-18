@@ -13,12 +13,11 @@
     ". . . . .";
   background: rgba(0, 0, 0, 0.7);
   margin: auto;
-  color: #ffffff;
+  /* color: #ffd890; */
   border-radius: 40px;
   border: 1px solid #007eff;
   box-shadow: inset 0px 0px 30px rgb(14, 115, 146);
 }
-
 
 .class1,
 .class2,
@@ -39,7 +38,7 @@
 }
 
 div i {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
 }
 
 .class1,
@@ -61,7 +60,7 @@ div i {
 .class4:active,
 .class6:active {
   background-color: rgb(14, 115, 146);
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   transition: background-color 0.2s;
 }
 
