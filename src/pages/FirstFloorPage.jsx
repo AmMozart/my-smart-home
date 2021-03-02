@@ -14,7 +14,7 @@ const FirstFloorPage = ({changeValue, statusReducer}) => {
             <ToggleLight
               description="0-01L"
               name=""
-              value={statusReducer['0-01L']}
+              value={statusReducer.dmxChannels[1]}
               changeValue={changeValue}
             />
           </div>
@@ -22,7 +22,7 @@ const FirstFloorPage = ({changeValue, statusReducer}) => {
             <ToggleLight
               description="0-02L"
               name=""
-              value={statusReducer['0-02L']}
+              value={statusReducer.dmxChannels[2]}
               changeValue={changeValue}
             />
           </div>
@@ -30,7 +30,7 @@ const FirstFloorPage = ({changeValue, statusReducer}) => {
             <ToggleLight
               description="0-03L"
               name=""
-              value={statusReducer['0-03L']}
+              value={statusReducer.dmxChannels[3]}
               changeValue={changeValue}
             />
           </div>
@@ -38,7 +38,7 @@ const FirstFloorPage = ({changeValue, statusReducer}) => {
             <ToggleLight
               description="0-04L"
               name=""
-              value={statusReducer['0-04L']}
+              value={statusReducer.dmxChannels[4]}
               changeValue={changeValue}
             />
           </div>
@@ -46,7 +46,7 @@ const FirstFloorPage = ({changeValue, statusReducer}) => {
             <ToggleLight
               description="0-05L"
               name=""
-              value={statusReducer['0-05L']}
+              value={statusReducer.dmxChannels[5]}
               changeValue={changeValue}
             />
           </div>
