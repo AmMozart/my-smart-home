@@ -9,7 +9,7 @@ export default function CenterEye() {
   const [player, setPlayer] = useState(null)
   let canvas = React.createRef()
 
-  useEffect(() => {
+ /* useEffect(() => {
     player || (setPlayer(new window.JSMpeg.Player(`ws://${HOST_IP}:9998`, {
       canvas: canvas.current, // Canvas should be a canvas DOM element
     })))
@@ -17,7 +17,7 @@ export default function CenterEye() {
     return function () {
       if (player) player.stop()
     }
-  }, [canvas, player])
+  }, [canvas, player])*/
 
   return (
     <div className={style['cssload-container']}

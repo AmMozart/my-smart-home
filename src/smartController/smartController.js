@@ -32,7 +32,7 @@ function Esp32(ip = IP) {
   }
 
   this.connect = () => {
-    this.socket = new WebSocket(`ws://${ip}/ws`)
+    this.socket = new WebSocket(`wss://${ip}/ws`)
     
     this.socket.onopen = (e) => {
       console.log("Соединение установлено")

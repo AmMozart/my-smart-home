@@ -9,7 +9,7 @@ class Cam extends React.Component {
     this.player = null
     this.active = props.active
   }
-  componentDidMount() {
+  /*componentDidMount() {
     this.player || (this.player = new window.JSMpeg.Player(`ws://${HOST_IP}:9999`, {
       canvas: document.getElementById(this.id)
     }))
@@ -18,7 +18,7 @@ class Cam extends React.Component {
 
   componentWillUnmount() {
     if (this.player) this.player.stop()
-  }
+  }*/
   render() {
 
     return (
